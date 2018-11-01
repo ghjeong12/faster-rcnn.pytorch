@@ -141,6 +141,7 @@ if __name__ == '__main__':
 
   print('{:d} roidb entries'.format(len(roidb)))
 
+  # input_dir = "./data/pretrained_model/vgg16_caffe.pth"
   input_dir = args.load_dir + "/" + args.net + "/" + args.dataset
   if not os.path.exists(input_dir):
     raise Exception('There is no input directory for loading network from ' + input_dir)
